@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/uploads" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="" multiple>
+    <input type="submit" value="Upload">
+        {% if s != "0"%}
+        <table>
+            {% for key in s %}
+                   <tr>
+                       <td>{{key}}</td>
+                       <td>{{ s[key] }}</td>
+                       </tr>
+            {% endfor %}
+        </table>
+
+        {% else %}
+            <div>提交之后会出现详细信息</div>
+        {% endif %}
+
+
+</form>
+</body>
+</html>
