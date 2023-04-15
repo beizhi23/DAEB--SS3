@@ -1,3 +1,3 @@
-# ALB-Bagging
-核心算法代码在selfadaptionbagging.py中
-k-flod为交叉验证文件
+DAEB-tSS3
+核心算法代码在Document_internal_data_enhancement.py中
+DAEB_main为主函数
